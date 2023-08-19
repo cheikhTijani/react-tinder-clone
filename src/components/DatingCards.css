@@ -1,0 +1,68 @@
+.datingCards__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    width: 40rem;
+    padding: 2rem;
+    max-width: 30vw;
+    height: 45vh;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.swipe {
+    position: absolute;
+}
+
+.cardContent {
+    width: 100%;
+    height: 100%;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 400;
+    color: #333;
+    font-size: 1.5rem;
+    padding: .2rem 1.2rem;
+    border-radius: 3px;
+    background-color: rgba(245, 245, 245, .7);
+}
+
+.buttons {
+    position: fixed;
+    bottom: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buttons__repeat {
+    padding: 1rem !important;
+    color: #f5b748 !important;
+}
+
+.buttons__left {
+    padding: 1rem !important;
+    color: #ec5e6f !important;
+}
+
+.buttons__right {
+    padding: 1rem !important;
+    color: #76e2b3 !important;
+}
+
+.color-disabled {
+    color: #c3c4d3 !important;
+}

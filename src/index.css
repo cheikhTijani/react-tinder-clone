@@ -1,0 +1,180 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+/* variables */
+:root {
+    --heading-color: #444;
+    --text-color: #999;
+    --highlight-color: #4973f2;
+    --primary-color: #d13267;
+    --primary-dark: #922348;
+    --primary-light: #da5b85;
+    --bg-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* layout */
+.page-title {
+    font-size: 2rem;
+    color: var(--heading-color);
+    display: inline-block;
+}
+
+.loading {
+    font-size: 1.3rem;
+    color: #555;
+    font-style: italic;
+}
+
+.btn {
+    background: #fff;
+    margin: 1rem 0;
+    padding: .5rem 1.5rem;
+    border-radius: 4px;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.6rem;
+    border: 1px solid var(--primary-color);
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: scale(1.01);
+}
+
+.btn-active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-active:hover {
+    transform: scale(1.01);
+}
+
+/* forms */
+label {
+    display: block;
+    /* margin: .5rem auto; */
+    font-size: 1.3rem;
+}
+
+label span {
+    display: block;
+    /* margin-bottom: .3rem; */
+}
+
+input,
+textarea,
+select {
+    margin: .5rem auto;
+    padding: .7rem;
+    font-size: 1.3rem;
+    color: #555;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 16rem;
+}
+
+.error {
+    color: red;
+    margin: .5rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.auth-form {
+    max-width: 35rem;
+    margin: 5rem auto;
+}
+
+.login-switch {
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* PROFILE */
+.profile {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.profile h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.profile h4 {
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: 400;
+}
+
+/* MATCH */
+.match,
+.sent,
+.message {
+    max-width: 40rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.match h2,
+.sent h2 {
+    color: green;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.sent h2 {
+    margin-bottom: 3rem;
+}
+
+.match img {
+    border-radius: 50%;
+}
+
+.message_container {
+    font-size: 1.3rem;
+    margin: .5rem auto;
+    max-width: 30rem;
+    border: 1px solid #999;
+    border-radius: 11px;
+    padding: 1rem;
+
+    >.msg_content {
+        text-align: left;
+    }
+
+    >.msg_date {
+        text-align: right;
+    }
+}
